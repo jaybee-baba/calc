@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            text-align: center;
+        }
+
+        .calc {
+            width: 600px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        form{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .buttons{
+            display: inline-block;
+        }
+
+        .buttons div {
+            color: white;
+            padding: 10px;
+            border: none;
+            background-color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .input{
+            width: fit-content;
+            border: 2px solid black;
+            border-radius: 5px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .sign {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        footer{
+            font-weight: bold;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="calc">
+        <div class="input num1" contenteditable>0</div>
+        <span class="sign"></span>
+        <div class="input num2" contenteditable>0</div>
+        <div class="buttons">
+            <div>+</div>
+            <div>-</div>
+            <div>x</div>
+            <div>/</div>
+        </div>
+        <input type="submit">
+    </form>
+
+    <footer class="answer"></footer>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
